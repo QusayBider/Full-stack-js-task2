@@ -13,10 +13,7 @@ var names = [
 
  
 for (var i = 0; i <names.length; i++) {
-    var row = document.createElement("tr");
-    var col = document.createElement("td");
-    col.textContent = names[i];
-    row.appendChild(col);
-    document.querySelector("table tbody").appendChild(row);
+    
+    document.querySelector("table tbody").innerHTML += `<tr><td> ${names[i]}</td></tr>`;
    
 }
